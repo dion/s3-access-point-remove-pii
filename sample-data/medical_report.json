@@ -1,0 +1,65 @@
+{
+  "patient_records": [
+    {
+      "patient_id": "PT-001-2024",
+      "personal_info": {
+        "first_name": "Alice",
+        "last_name": "Johnson",
+        "date_of_birth": "1975-06-14",
+        "ssn": "678-90-1234",
+        "phone": "555-111-2222",
+        "email": "alice.johnson@email.com",
+        "address": {
+          "street": "123 Health Street",
+          "city": "Denver",
+          "state": "CO",
+          "zip": "80201"
+        }
+      },
+      "medical_info": {
+        "insurance_id": "INS-987654321",
+        "primary_physician": "Dr. Smith",
+        "diagnosis": "Hypertension, Type 2 Diabetes",
+        "medications": ["Metformin 500mg", "Lisinopril 10mg"],
+        "allergies": ["Penicillin", "Shellfish"]
+      },
+      "emergency_contact": {
+        "name": "Bob Johnson",
+        "relationship": "Spouse",
+        "phone": "555-333-4444"
+      }
+    },
+    {
+      "patient_id": "PT-002-2024",
+      "personal_info": {
+        "first_name": "Marcus",
+        "last_name": "Williams",
+        "date_of_birth": "1988-11-22",
+        "ssn": "789-01-2345",
+        "phone": "555-555-6666",
+        "email": "marcus.williams@gmail.com",
+        "address": {
+          "street": "456 Wellness Ave",
+          "city": "Portland",
+          "state": "OR",
+          "zip": "97201"
+        }
+      },
+      "medical_info": {
+        "insurance_id": "INS-123456789",
+        "primary_physician": "Dr. Brown",
+        "diagnosis": "Asthma, Anxiety Disorder",
+        "medications": ["Albuterol inhaler", "Sertraline 50mg"],
+        "allergies": ["Latex"]
+      },
+      "emergency_contact": {
+        "name": "Maria Williams",
+        "relationship": "Mother",
+        "phone": "555-777-8888"
+      }
+    }
+  ],
+  "report_generated": "2024-09-08T10:30:00Z",
+  "generated_by": "Dr. Patricia Lee",
+  "facility": "Metro General Hospital"
+}

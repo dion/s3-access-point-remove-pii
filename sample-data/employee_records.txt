@@ -1,0 +1,49 @@
+EMPLOYEE RECORDS - CONFIDENTIAL
+
+Employee ID: EMP-2024-001
+Name: Jessica Martinez
+Email: jessica.martinez@company.com
+Personal Email: jess.martinez@yahoo.com
+Phone: (555) 234-5678
+Mobile: (555) 876-5432
+SSN: 234-56-7890
+Date of Birth: April 12, 1987
+Address: 1425 Sunset Boulevard, Miami, FL 33101
+Emergency Contact: Carlos Martinez (husband) - (555) 345-6789
+
+Bank Account: Chase Bank - Routing: 021000021, Account: 123456789012
+Direct Deposit: $75,000 annual salary
+
+---
+
+Employee ID: EMP-2024-002
+Name: Robert Chen
+Email: robert.chen@company.com
+Personal Email: rob.chen@gmail.com
+Phone: (555) 345-6789
+Mobile: (555) 987-1234
+SSN: 345-67-8901
+Date of Birth: September 8, 1982
+Address: 2801 Broadway Street, Seattle, WA 98101
+Emergency Contact: Linda Chen (wife) - (555) 456-7890
+
+Bank Account: Bank of America - Routing: 121000358, Account: 987654321098
+Direct Deposit: $85,000 annual salary
+
+Medical Notes: Allergic to penicillin, requires regular insulin for diabetes
+
+---
+
+Employee ID: EMP-2024-003
+Name: Amanda Thompson
+Email: amanda.thompson@company.com
+Personal Email: athompson@hotmail.com
+Phone: (555) 567-8901
+Mobile: (555) 432-1098
+SSN: 567-89-0123
+Date of Birth: January 25, 1991
+Address: 555 Oak Street Apt 4B, Boston, MA 02101
+Emergency Contact: Mark Thompson (brother) - (555) 678-9012
+
+Bank Account: Wells Fargo - Routing: 121042882, Account: 456789012345
+Direct Deposit: $92,000 annual salary

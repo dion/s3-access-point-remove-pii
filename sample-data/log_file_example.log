@@ -1,0 +1,15 @@
+2024-09-08 10:15:23 INFO [UserService] User login successful: email=john.doe@company.com, ip=192.168.1.100
+2024-09-08 10:16:45 INFO [PaymentService] Payment processed: amount=$1250.00, card=****-****-****-4532, customer_id=12345
+2024-09-08 10:17:12 ERROR [AuthService] Failed login attempt: email=hacker@malicious.com, ip=203.0.113.45
+2024-09-08 10:18:33 INFO [UserService] Profile update: user_id=67890, phone=555-123-4567, ssn=***-**-6789
+2024-09-08 10:19:44 WARN [SecurityService] Suspicious activity detected: user=sarah.johnson@email.com, multiple_login_attempts=5
+2024-09-08 10:20:15 INFO [OrderService] Order created: customer=mike.brown@gmail.com, phone=(555) 987-6543, order_id=ORD-2024-001
+2024-09-08 10:21:26 INFO [UserService] Password reset requested: email=admin@company.com, reset_token=abc123xyz789
+2024-09-08 10:22:37 ERROR [DatabaseService] Connection failed: host=db.internal.com, user=dbuser, password=***hidden***
+2024-09-08 10:23:48 INFO [NotificationService] Email sent: to=customer@example.com, subject="Your order confirmation", delivery_status=success
+2024-09-08 10:24:59 INFO [UserService] Account verification: email=newuser@domain.com, verification_code=789456, phone=555-444-3333
+2024-09-08 10:25:10 WARN [PaymentService] Declined transaction: card=4111-1111-1111-1111, reason=insufficient_funds, customer_ssn=123-45-6789
+2024-09-08 10:26:21 INFO [UserService] User registration: email=test.user@email.com, phone=555-777-8888, dob=1990-05-15
+2024-09-08 10:27:32 ERROR [APIService] Rate limit exceeded: ip=198.51.100.42, user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64)", api_key=sk_test_123456789
+2024-09-08 10:28:43 INFO [ReportService] Monthly report generated: admin_email=reports@company.com, report_id=RPT-2024-09
+2024-09-08 10:29:54 INFO [UserService] Contact information updated: user_id=11111, address="123 New Street, City, ST 12345", emergency_contact=555-000-1111

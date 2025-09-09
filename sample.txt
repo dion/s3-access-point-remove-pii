@@ -1,0 +1,15 @@
+Hello team,
+
+Please find below the details for the new employee:
+
+Name: John Doe
+Email: john.doe@example.com
+Phone: 555-123-4567
+Address: 123 Main St, Springfield
+
+Project notes:
+- Meeting scheduled for 2025-09-15
+- Budget approved
+
+Thanks,
+HR Department

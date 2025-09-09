@@ -1,0 +1,68 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  s3-olap-scrubber
+
+  Sample SAM Template for s3-olap-scrubber
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 3
+
+Resources:
+  RawDataBucket:
+    Type: AWS::S3::Bucket
+  
+  ScrubberFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Runtime: python3.13
+      Architectures:
+        - x86_64
+      Handler: app.lambda_handler
+      CodeUri: src/
+      MemorySize: 512
+      Timeout: 30
+      Policies:
+        - S3ReadPolicy:
+            BucketName: !Ref RawDataBucket
+        - Statement:
+            - Effect: Allow
+              Action:
+                - s3-object-lambda:WriteGetObjectResponse
+              Resource: "*"
+            - Effect: Allow
+              Action:
+                - s3:GetObject
+              Resource: !Sub "arn:aws:s3:${AWS::Region}:${AWS::AccountId}:accesspoint/raw-data-access-point/object/*"
+            - Effect: Allow
+              Action:
+                - s3:GetAccessPoint
+              Resource: !Sub "arn:aws:s3:${AWS::Region}:${AWS::AccountId}:accesspoint/raw-data-access-point"
+
+  RawDataAccessPoint:
+    Type: AWS::S3::AccessPoint
+    Properties:
+      Bucket: !Ref RawDataBucket
+      Name: raw-data-access-point
+
+  ObjectLambdaAccessPoint:
+    Type: AWS::S3ObjectLambda::AccessPoint
+    Properties:
+      Name: scrubber-olap
+      ObjectLambdaConfiguration:
+        SupportingAccessPoint: !Sub arn:aws:s3:${AWS::Region}:${AWS::AccountId}:accesspoint/raw-data-access-point
+        TransformationConfigurations:
+          - Actions: ["GetObject"]
+            ContentTransformation:
+              AwsLambda:
+                FunctionArn: !GetAtt ScrubberFunction.Arn
+
+Outputs:
+  ObjectLambdaAccessPointArn:
+    Description: "S3 Object Lambda Access Point ARN"
+    Value: !Sub "arn:aws:s3-object-lambda:${AWS::Region}:${AWS::AccountId}:accesspoint/scrubber-olap"
+  RawDataBucketName:
+    Description: "Raw Data S3 Bucket Name"
+    Value: !Ref RawDataBucket

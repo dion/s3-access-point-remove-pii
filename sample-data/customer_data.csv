@@ -1,0 +1,6 @@
+customer_id,first_name,last_name,email,phone,ssn,credit_card,address,date_of_birth
+001,John,Smith,john.smith@email.com,555-123-4567,123-45-6789,4532-1234-5678-9012,"123 Main St, New York, NY 10001",1985-03-15
+002,Sarah,Johnson,sarah.j@gmail.com,555-987-6543,987-65-4321,5555-4444-3333-2222,"456 Oak Ave, Los Angeles, CA 90210",1990-07-22
+003,Michael,Brown,m.brown@company.com,555-456-7890,456-78-9123,4111-1111-1111-1111,"789 Pine Rd, Chicago, IL 60601",1978-12-03
+004,Emily,Davis,emily.davis@hotmail.com,555-321-6547,321-65-4789,3782-8224-6310-005,"321 Elm St, Houston, TX 77001",1992-05-18
+005,David,Wilson,d.wilson@outlook.com,555-789-0123,789-01-2345,6011-1111-1111-1117,"654 Maple Dr, Phoenix, AZ 85001",1983-11-09
